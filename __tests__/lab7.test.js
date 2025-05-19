@@ -110,7 +110,7 @@ describe('Basic user flow for Website', () => {
       const button = await shadowRoot.$('button');
       const innerText = await (await button.getProperty('innerText')).jsonValue();
       if (innerText !== 'Remove from Cart') {
-        console.log(`❌ Button ${i + 1} expected 'Remove from Cart' but got '${innerText}'`);
+        console.log(` Button ${i + 1} expected 'Remove from Cart' but got '${innerText}'`);
       }
       expect(innerText).toBe('Remove from Cart');
     }
@@ -178,7 +178,7 @@ describe('Basic user flow for Website', () => {
       const button = await shadowRoot.$('button');
       const innerText = await (await button.getProperty('innerText')).jsonValue();
       if (innerText !== 'Add to Cart') {
-        console.log(`❌ Button ${i + 1} expected 'Add to Cart' but got '${innerText}'`);
+        console.log(` Button ${i + 1} expected 'Add to Cart' but got '${innerText}'`);
       }
       expect(innerText).toBe('Add to Cart');
     }
